@@ -1,0 +1,307 @@
+body {
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/*--------------------------------------------------------------
+# SEZIONE 1
+--------------------------------------------------------------*/
+.bg-hero {
+  background-color: #F5F1EA;
+}
+
+/*--------------------------------------------------------------
+# Titoli e testo principale (MOBILE)
+--------------------------------------------------------------*/
+.hero-title {
+  text-align: center;
+  color: #222;
+  margin-bottom: 1rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.hero-title-big {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.playfair-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/*--------------------------------------------------------------
+# Gradiente su testo e bottoni
+--------------------------------------------------------------*/
+.text-gradient {
+  background: linear-gradient(to left, #866413 25%, #E3D88C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.btn-gradient {
+  background: linear-gradient(to left, #866413 25%, #E3D88C 100%);
+  color: white;
+  border: none;
+}
+
+/*--------------------------------------------------------------
+# Sezione statistiche
+--------------------------------------------------------------*/
+.hero-stat-number {
+  font-weight: 700;
+  color: #222;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.hero-stat-text {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.25rem;
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+# Bottoni - effetti interattivi
+--------------------------------------------------------------*/
+.btn-hover-grow {
+  transition: transform 0.2s ease-in-out;
+}
+
+.btn-hover-grow:hover {
+  transform: scale(1.05);
+}
+
+.btn-outline-dark-hover {
+  background-color: white;
+  color: black;
+  border: 1.5px solid black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-dark-hover:hover {
+  background-color: black;
+  color: white;
+}
+
+/*--------------------------------------------------------------
+# Bottoni - effetti interattivi
+--------------------------------------------------------------*/
+.no-resize{
+  resize: none;
+}
+
+/*--------------------------------------------------------------
+# Form Contatti
+--------------------------------------------------------------*/
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  color: #999;
+  pointer-events: none;
+}
+
+textarea.form-control {
+  resize: none;
+}
+
+.custom-focus:focus {
+  outline: none;
+  border: 2px solid #E3D88C;
+  box-shadow: 0 0 0 2px #222, 0 0 0 4px #c59d5f;
+  background-color: #fff;
+  color: #000;
+  z-index: 2;
+}
+
+.btn-disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+/*--------------------------------------------------------------
+# SEZIONE 2
+--------------------------------------------------------------*/
+.bg-hero-2 {
+  background-color: #F5F5F5;
+}
+
+/*--------------------------------------------------------------
+# Animazione "chi siamo"
+--------------------------------------------------------------*/
+.fade-in {
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Animazione card
+--------------------------------------------------------------*/
+.slide-up {
+  opacity: 0;
+  transform: translateY(30px); /* parte spostato 30px verso il basso */
+  transition: opacity 2s ease, transform 0.8s ease;
+}
+
+.slide-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*--------------------------------------------------------------
+# SEZIONE 3
+--------------------------------------------------------------*/
+.bg-hero-3 {
+  background-color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Animazioni Card
+--------------------------------------------------------------*/
+.custom-card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card-hover:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+.custom-card-hover:hover h5 {
+  transition: color 0.3s ease;
+  background: linear-gradient(to left, #866413 25%, #E3D88C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.custom-card-hover:hover .icon-container {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+/*--------------------------------------------------------------
+# SEZIONE 4
+--------------------------------------------------------------*/
+.bg-hero-4 {
+  background-color: #222;
+}
+
+.text-gray-custom {
+  color: #b0b0b0;
+}
+
+/*--------------------------------------------------------------
+# Card Risultati
+--------------------------------------------------------------*/
+.bg-card-dark {
+  background-color: #2c2c2c; /* Grigio scurissimo */
+}
+
+.border-gray {
+  border: 1px solid #d6d6d6;
+  border-radius: 0.5rem; /* arrotondato, puoi personalizzare */
+}
+
+.bg-box {
+  background-color: #555555; /* Grigio scuro chiaro */
+}
+
+.text-gradient-stats {
+  background: linear-gradient(to left, #E3D88C 25%, #866413 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.counter {
+  transition: all 0.3s ease;
+}
+
+/*--------------------------------------------------------------
+# Sezione 5 - Animazioni
+--------------------------------------------------------------*/
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 2s ease forwards;
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-right {
+  animation: slideInRight 2s ease forwards;
+}
+
+/*--------------------------------------------------------------
+# TABLET (min-width: 768px)
+--------------------------------------------------------------*/
+@media (min-width: 768px) {
+  .hero-title {
+    text-align: left;
+  }
+  
+  .hero-title-big {
+    font-size: 3.5rem;
+  }
+  
+  .hero-stat-number,
+  .hero-stat-text {
+    text-align: left;
+  }
+  
+  .fs-responsive {
+    font-size: 1rem !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# DESKTOP (min-width: 992px)
+--------------------------------------------------------------*/
+@media (min-width: 992px) {
+  .hero-title-big {
+    font-size: 4.5rem;
+  }
+  
+  .hero-stat-number {
+    font-size: 2rem;
+  }
+  
+  .hero-stat-text {
+    font-size: 1rem;
+  }
+  
+  .fs-responsive {
+    font-size: 1rem !important;
+  }
+}

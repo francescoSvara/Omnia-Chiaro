@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Omnia Patrimoni</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+    <!-- Sezione 1 -->
+    <div class="container-fluid py-3 bg-hero d-flex align-items-center">
+        <div class="container py-3">
+            <div class="row flex-column flex-md-row">
+                
+                <!-- Colonna: Testo e Statistiche -->
+                <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+                    
+                    <!-- Titolo principale -->
+                    <h1 class="hero-title hero-title-big playfair-display my-3 text-center text-md-start text-lg-start">
+                        Il Tuo<br>
+                        Patrimonio<br>
+                        <span class="text-gradient">Immobiliare</span><br>
+                        Merita di Più
+                    </h1>
+                    
+                    <!-- Paragrafo descrittivo -->
+                    <p class="lead m-4 mx-md-0 fw-normal text-center text-md-start text-lg-start">
+                        Trasformiamo le tue proprietà in investimenti di successo.<br>
+                        Consulenza strategica, risultati concreti, massima professionalità.
+                    </p>
+                    
+                    <!-- Bottoni CTA -->
+                    <div class="d-flex flex-column flex-sm-row gap-3 mb-4 justify-content-center justify-content-md-start">
+                        <button type="button" class="btn btn-gradient py-2 px-md-5 fw-bold text-black btn-hover-grow d-flex align-items-center gap-2 justify-content-center">
+                            Consulenza Gratuita
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M10.146 4.146a.5.5 0 0 1 .708 0L14 7.293a.5.5 0 0 1 0 .707l-3.146 3.146a.5.5 0 0 1-.708-.708L12.293 8H2.5a.5.5 0 0 1 0-1h9.793L10.146 4.854a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </button>
+                        
+                        <button type="button" class="btn border-3 py-2 px-md-4 fw-bold btn-outline-dark-hover">
+                            Scopri i Servizi
+                        </button>
+                    </div>
+                    
+                    <!-- Statistiche -->
+                    <div class="d-flex flex-row gap-4 mt-3 text-center justify-content-center justify-content-md-start">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="hero-stat-number fade-in" data-target="500">
+                                <span class="number">0</span>+
+                            </div>
+                            <div class="hero-stat-text">Immobili venduti</div>
+                        </div>
+                        
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="hero-stat-number fade-in" data-target="50">
+                                €<span class="number">0</span>M+
+                            </div>
+                            <div class="hero-stat-text">Valore Transato</div>
+                        </div>
+                        
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="hero-stat-number fade-in" data-target="98">
+                                <span class="number">0</span>%
+                            </div>
+                            <div class="hero-stat-text">Clienti soddisfatti</div>
+                        </div>
+                    </div>            
+                </div>
+                
+                <!-- Colonna: Form contatti -->
+                <div class="col-12 col-md-6 d-flex flex-column shadow align-items-center mt-5 mt-md-0 justify-content-center text-center text-md-start">
+                    
+                    <!-- Solo su mobile -->
+                    <h3 class="display-5 px-5 px-md-0 mb-2 playfair-display fw-bold d-block d-md-none">
+                        Richiedi la Tua Consulenza Gratuita
+                    </h3>
+                    <!-- Da tablet in su -->
+                    <h3 class="px-5 px-md-0 mb-2 playfair-display fw-bold d-none d-md-block">
+                        Richiedi la Tua Consulenza Gratuita
+                    </h3>
+                    
+                    <p class="mb-4 fs-5 fs-responsive small">Un esperto ti contatterà entro 24 ore</p>
+                    
+                    <form id="myForm" class="w-100 px-5 px-md-0" style="max-width: 500px;">
+                        
+                        <div class="position-relative mb-3">
+                            <svg class="form-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-icon lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            <input type="text" class="form-control custom-focus py-2 ps-5" placeholder="Nome e Cognome *" required>
+                        </div>
+                        
+                        <div class="position-relative mb-3">
+                            <svg class="form-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+                            <input type="email" class="form-control custom-focus py-2 ps-5" placeholder="Email *" required>
+                        </div>
+                        
+                        <div class="position-relative mb-3">
+                            <svg class="form-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+                            <input type="tel" class="form-control custom-focus py-2 ps-5" placeholder="Telefono *" required>
+                        </div>
+                        
+                        <div class="position-relative mb-3">
+                            <svg class="form-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square-icon lucide-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                            <textarea class="form-control custom-focus py-2 ps-5 no-resize" rows="4" placeholder="Descrivi brevemente le tue esigenze immobiliari..."></textarea>
+                        </div>
+                        
+                        <button type="submit" id="submit-btn" class="btn btn-gradient pt-4 text-black btn-hover-grow w-100 d-flex justify-content-center align-items-center btn-disabled" disabled>
+                            <p class="fw-bold fs-4">
+                                <svg class="mx-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send-icon lucide-send"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg>
+                                Richiedi consulenza gratuita
+                            </p>
+                        </button>
+                        
+                        <p class="text-muted mt-2 py-2 small text-center">
+                            *Campi obbligatori. I tuoi dati sono protetti e non verranno condivisi con terzi.
+                        </p>
+                    </form>
+                </div>
+            </div>            
+        </div>                
+    </div>       
+    
+    <!-- Sezione 2 - Chi Siamo -->
+    <div class="container-fluid py-5 bg-hero-2">
+        
+        <!-- Titolo Sezione -->
+        <div class="row justify-content-center">
+            <div class="col-12 text-center py-3 fade-in">
+                <h3 class="hero-title display-5 fw-bold playfair-display text-center">Chi Siamo</h3>
+            </div>
+            
+            <!-- Contenuto principale -->
+            <div class="col-10 col-md-8 col-lg-7 px-5 border rounded-4 shadow text-center bg-white slide-up">
+                
+                <!-- Icona introduttiva -->
+                <div class="d-inline-flex align-items-center justify-content-center my-5 bg-secondary-subtle rounded-4 btn-gradient" style="width: 80px; height: 80px;">
+                    <svg class="text-black" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/>
+                        <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/>
+                        <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/>
+                        <path d="M10 6h4"/>
+                        <path d="M10 10h4"/>
+                        <path d="M10 14h4"/>
+                        <path d="M10 18h4"/>
+                    </svg>
+                </div>
+                
+                <!-- Sottotitolo -->
+                <h3 class="mb-4 hero-title fw-bold playfair-display text-center">
+                    La Tua Garanzia di Successo nel Mercato Immobiliare
+                </h3>
+                
+                <!-- Descrizione Azienda -->
+                <p>
+                    <strong>Omnia Patrimoni</strong> nasce dalla passione per l'eccellenza nel settore immobiliare.
+                    Con oltre 15 anni di esperienza, siamo specializzati nella valorizzazione del patrimonio immobiliare
+                    attraverso strategie innovative e un approccio personalizzato.
+                </p>
+                <p>
+                    La nostra missione è semplice:
+                    <strong>massimizzare il valore dei tuoi investimenti immobiliari</strong> attraverso competenza,
+                    trasparenza e risultati concreti. Ogni progetto è unico, ogni cliente merita un servizio su misura.
+                </p>
+                
+                <!-- Valori Aziendali -->
+                <div class="row justify-content-center text-center mt-4">
+                    
+                    <!-- Valore: Eccellenza -->
+                    <div class="col-12 col-md-4">
+                        <div class="p-3 d-inline-flex align-items-center justify-content-center text-black mt-5 bg-secondary-subtle rounded-4 btn-gradient">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/>
+                                <circle cx="12" cy="8" r="6"/>
+                            </svg>
+                        </div>
+                        <p class="mt-2 fw-bold">Eccellenza</p>
+                        <p>Standard qualitativi superiori in ogni servizio</p>
+                    </div>
+                    
+                    <!-- Valore: Affidabilità -->
+                    <div class="col-12 col-md-4">
+                        <div class="p-3 d-inline-flex align-items-center justify-content-center text-black mt-5 bg-secondary-subtle rounded-4 btn-gradient">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+                            </svg>
+                        </div>
+                        <p class="mt-2 fw-bold">Affidabilità</p>
+                        <p>Garanzia di serietà e professionalità</p>
+                    </div>
+                    
+                    <!-- Valore: Personalizzazione -->
+                    <div class="col-12 col-md-4 mb-4">
+                        <div class="p-3 d-inline-flex align-items-center justify-content-center text-black mt-5 bg-secondary-subtle rounded-4 btn-gradient">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 21a8 8 0 0 0-16 0"/>
+                                <circle cx="10" cy="8" r="5"/>
+                                <path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"/>
+                            </svg>
+                        </div>
+                        <p class="mt-2 fw-bold">Personalizzazione</p>
+                        <p>Soluzioni su misura per ogni esigenza</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Sezione 3 - Cosa Possiamo Fare per Te-->
+    <div class="container py-5 bg-hero-3">
+        <div class="row justify-content-center fade-in">
+            
+            <!-- Titolo Sezione -->
+            <div class="col-12 text-center py-3">
+                <h3 class="hero-title display-5 fw-bold playfair-display text-center">Cosa possiamo Fare per Te</h3>
+                <p class="">
+                    Servizi completi per valorizzare, vendere e investire nel mercato immobiliare con la garanzia di risultati concreti e misurabili.    
+                </p>
+            </div>
+            
+            <div class="row justify-content-center">
+                
+                <!-- Card 1 -->
+                <div class="col-12 col-md-3 mb-4 d-flex justify-content-center">
+                    <div class="custom-card-hover text-center p-4 bg-white border rounded-4 shadow w-100">
+                        <div class="icon-container d-inline-flex align-items-center justify-content-center text-black bg-secondary-subtle rounded-4 btn-gradient mb-3" style="width: 80px; height: 80px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up-icon lucide-trending-up"><path d="M16 7h6v6"/><path d="m22 7-8.5 8.5-5-5L2 17"/></svg>
+                        </div>
+                        <h5 class="playfair-display fw-bold pb-3">Valutazione Immobile</h5>
+                        <p>Analisi di mercato approfondita per determinare il valore reale del tuo immobile con report dettagliato e strategia di posizionamento.</p>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="col-12 col-md-3 mb-4 d-flex justify-content-center">
+                    <div class="custom-card-hover text-center p-4 bg-white border rounded-4 shadow w-100">
+                        <div class="icon-container d-inline-flex align-items-center justify-content-center text-black bg-secondary-subtle rounded-4 btn-gradient mb-3" style="width: 80px; height: 80px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/>
+                                <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/>
+                                <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/>
+                                <path d="M10 6h4"/>
+                                <path d="M10 10h4"/>
+                                <path d="M10 14h4"/>
+                                <path d="M10 18h4"/>
+                            </svg>
+                        </div>
+                        <h5 class="playfair-display fw-bold pb-3">Assistenza alla Vendita</h5>
+                        <p>Analisi di mercato approfondita per determinare il valore reale del tuo immobile con report dettagliato e strategia di posizionamento.</p>
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="col-12 col-md-3 mb-4 d-flex justify-content-center">
+                    <div class="custom-card-hover text-center p-4 bg-white border rounded-4 shadow w-100">
+                        <div class="icon-container d-inline-flex align-items-center justify-content-center text-black bg-secondary-subtle rounded-4 btn-gradient mb-3" style="width: 80px; height: 80px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+                        </div>
+                        <h5 class="playfair-display fw-bold pb-3">Ricerca Investimento</h5>
+                        <p>Selezione di opportunità immobiliari ad alto potenziale di rendimento, analisi ROI e due diligence completa per investimenti sicuri.</p>
+                    </div>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="col-12 col-md-3 mb-4 d-flex justify-content-center">
+                    <div class="custom-card-hover text-center p-4 bg-white border rounded-4 shadow w-100">
+                        <div class="icon-container d-inline-flex align-items-center justify-content-center text-black bg-secondary-subtle rounded-4 btn-gradient mb-3" style="width: 80px; height: 80px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wrench-icon lucide-wrench"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                        </div>
+                        <h5 class="playfair-display fw-bold pb-3">Progetti di Valorizzazione</h5>
+                        <p>Ristrutturazioni strategiche e interventi di riqualificazione per massimizzare il valore del patrimonio immobiliare.</p>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+    
+    <!-- Sezione 4 - Perché Scegliere Omnia -->
+    <div class="container-fluid py-5 bg-hero-4">
+        <div class="container py-5">
+            <div class="row">
+                
+                <!-- Colonna Sinistra: Testo -->
+                <div class="col-12 col-md-6 mb-4 text-white">
+                    <!-- Titolo Sezione -->
+                    <h2 class="display-5 playfair-display fw-bold mb-4">
+                        Perché Scegliere<br>
+                        <span class="text-gradient">Omnia Patrimoni</span>
+                    </h2>
+                    <p>Non siamo solo consulenti immobiliari. Siamo i tuoi partner strategici per costruire e valorizzare il tuo patrimonio immobiliare.</p>
+                    
+                    <!-- Elenco Vantaggi -->
+                    <div class="d-flex mb-4">
+                        <!-- Icona Check -->
+                        <div class="me-3 d-flex align-items-center justify-content-center rounded-circle btn-gradient flex-shrink-0 btn-hover-grow" style="width: 32px; height: 32px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                        </div>
+                        <!-- Testo -->
+                        <div>
+                            <h5 class="ms-2 text-gradient mb-1 btn-hover-grow">15+ Anni di Esperienza</h5>
+                            <p class="ms-2 mb-0 text-gray-custom">Track record consolidato nel mercato immobiliare con centinaia di transazioni completate con successo.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex mb-4">
+                        <div class="me-3 d-flex align-items-center justify-content-center rounded-circle btn-gradient flex-shrink-0 btn-hover-grow" style="width: 32px; height: 32px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h5 class="ms-2 text-gradient mb-1 btn-hover-grow">Rete Esclusiva</h5>
+                            <p class="ms-2 mb-0 text-gray-custom">Accesso privilegiato a immobili off-market e network di investitori qualificati per opportunità uniche.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex mb-4">
+                        <div class="me-3 d-flex align-items-center justify-content-center rounded-circle btn-gradient flex-shrink-0 btn-hover-grow" style="width: 32px; height: 32px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h5 class="ms-2 text-gradient mb-1 btn-hover-grow">Trasparenza Totale</h5>
+                            <p class="ms-2 mb-0 text-gray-custom">Comunicazione chiara e costante in ogni fase del processo, con report dettagliati e aggiornati regolari.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex">
+                        <div class="me-3 d-flex align-items-center justify-content-center rounded-circle btn-gradient flex-shrink-0 btn-hover-grow" style="width: 32px; height: 32px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h5 class="ms-2 text-gradient mb-1 btn-hover-grow">Risultati Garantiti</h5>
+                            <p class="ms-2 mb-0 text-gray-custom">Approccio data-driven e strategie personalizzate che massimizzano il valore e minimizzano i tempi di vendita.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Colonna Destra: Risultati con Numeri Animati -->
+                <div class="col-12 col-md-6 mb-4 d-flex align-items-center">
+                    <div class="bg-card-dark rounded-4 border-gray shadow p-4 w-100">
+                        
+                        <!-- Titolo interno -->
+                        <div class="text-center mb-4">
+                            <div class="btn-gradient d-flex align-items-center justify-content-center mx-auto rounded-4 mb-3" style="width: 64px; height: 64px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="12 2 15 10 23 10 17 14 19 22 12 17 5 22 7 14 1 10 9 10 12 2" />
+                                </svg>
+                            </div>
+                            <h2 class="playfair-display fw-bold fs-4 text-white m-0">Risultati che Parlano</h2>
+                        </div>
+                        
+                        <!-- Numeri con Animazione -->
+                        <div class="row text-center">
+                            
+                            <div class="col-6 mb-4">
+                                <div class="bg-box rounded-4 p-3 h-100">
+                                    <strong class="fs-3 d-block playfair-display text-gradient-stats counter fade-in" data-target="95">0%</strong>
+                                    <p class="mb-0 text-white">Vendite in 60 giorni</p>
+                                </div>
+                            </div>
+                            
+                            <div class="col-6 mb-4">
+                                <div class="bg-box rounded-4 p-3 h-100">
+                                    <strong class="fs-3 d-block playfair-display text-gradient-stats counter fade-in" data-target="15">0%</strong>
+                                    <p class="mb-0 text-white">Valore medio ottenuto</p>
+                                </div>
+                            </div>
+                            
+                            <div class="col-6">
+                                <div class="bg-box rounded-4 p-3 h-100">
+                                    <strong class="fs-3 d-block playfair-display text-gradient-stats counter fade-in" data-target="24">0h</strong>
+                                    <p class="mb-0 text-white">Tempo di risposta</p>
+                                </div>
+                            </div>
+                            
+                            <div class="col-6">
+                                <div class="bg-box rounded-4 p-3 h-100">
+                                    <strong class="fs-3 d-block playfair-display text-gradient-stats counter fade-in" data-target="100">0%</strong>
+                                    <p class="mb-0 text-white">Trasparenza garantita</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Sezione 5 - Inizia Oggi -->
+    <div class="container-fluid py-5 bg-hero-2">
+        <div class="row justify-content-center">
+            
+            <!-- Titolo Sezione -->
+            <div class="col-12 text-center py-3 fade-in">
+                <h3 class="hero-title display-5 fw-bold playfair-display text-center">Inizia Oggi il Tuo Percorso di Successo</h3>
+                <p class="">
+                    Non aspettare. Il momento giusto per valorizzare il tuo patrimonio immobiliare è adesso. <br>
+                    Prenota la tua consulenza gratuita e scopri il potenziale nascosto dei tuoi investimenti.    
+                </p>
+            </div>
+            
+            <div class="row justify-content-center align-items-center">
+                
+                <!-- Card 1 -->
+                <div class="col-12 col-md-4 mb-4 slide-in-left">
+                    <div class="text-center p-4 bg-white border rounded-4 shadow w-100 text-sm-start">
+                        <h5 class="playfair-display fw-bold pb-3 fs-2">Cosa otterrai dalla consulenza gratuita:</h5>
+                        
+                        <!-- Elenco Vantaggi -->
+                        <div class="d-flex mb-2">
+                            <div class="me-3 d-flex align-items-center justify-content-center rounded-circle btn-gradient flex-shrink-0 btn-hover-grow" style="width: 24px; height: 24px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dot-icon lucide-dot"><circle cx="12.1" cy="12.1" r="1"/></svg>
+                            </div>
+                            <div>
+                                <p class="ms-2 mb-0">Valutazione professionale del tuo immobile</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex mb-2">
+                            <div class="me-3 d-flex align-items-center justify-content-center rounded-circle btn-gradient flex-shrink-0 btn-hover-grow" style="width: 24px; height: 24px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dot-icon lucide-dot"><circle cx="12.1" cy="12.1" r="1"/></svg>
+                            </div>
+                            <div>
+                                <p class="ms-2 mb-0">Analisi di mercato dettagliata</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex mb-2">
+                            <div class="me-3 d-flex align-items-center justify-content-center rounded-circle btn-gradient flex-shrink-0 btn-hover-grow" style="width: 24px; height: 24px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dot-icon lucide-dot"><circle cx="12.1" cy="12.1" r="1"/></svg>
+                            </div>
+                            <div>
+                                <p class="ms-2 mb-0">Strategia personalizzata di valorizzazione</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex mb-2">
+                            <div class="me-3 d-flex align-items-center justify-content-center rounded-circle btn-gradient flex-shrink-0 btn-hover-grow" style="width: 24px; height: 24px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dot-icon lucide-dot"><circle cx="12.1" cy="12.1" r="1"/></svg>
+                            </div>
+                            <div>
+                                <p class="ms-2 mb-0">Piano d'azione concreto e tempistiche</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4"><p><span class="fw-bold">Nessun impegno.</span> Solo valore aggiunto per le tue decisioni immobiliari</p>
+                    </div>
+                    <div class="text-center mt-4 d-flex align-items-center justify-content-center gap-2">
+                        <!-- 5 stelle gialle -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FFD700" viewBox="0 0 24 24" stroke="none">
+                            <path d="M12 .587l3.668 7.431 8.214 1.192-5.941 5.792 1.403 8.186L12 18.897l-7.344 3.86 1.403-8.186-5.941-5.792 8.214-1.192z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FFD700" viewBox="0 0 24 24" stroke="none">
+                            <path d="M12 .587l3.668 7.431 8.214 1.192-5.941 5.792 1.403 8.186L12 18.897l-7.344 3.86 1.403-8.186-5.941-5.792 8.214-1.192z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FFD700" viewBox="0 0 24 24" stroke="none">
+                            <path d="M12 .587l3.668 7.431 8.214 1.192-5.941 5.792 1.403 8.186L12 18.897l-7.344 3.86 1.403-8.186-5.941-5.792 8.214-1.192z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FFD700" viewBox="0 0 24 24" stroke="none">
+                            <path d="M12 .587l3.668 7.431 8.214 1.192-5.941 5.792 1.403 8.186L12 18.897l-7.344 3.86 1.403-8.186-5.941-5.792 8.214-1.192z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FFD700" viewBox="0 0 24 24" stroke="none">
+                            <path d="M12 .587l3.668 7.431 8.214 1.192-5.941 5.792 1.403 8.186L12 18.897l-7.344 3.86 1.403-8.186-5.941-5.792 8.214-1.192z"/>
+                        </svg>
+                        
+                        <!-- Testo -->
+                        <span class="ms-2">4.9/5 da 200+ recensioni</span>
+                    </div>
+                    
+                </div>
+                
+                <!-- Form Contatti -->
+                <div class="col-12 col-md-5 d-flex flex-column shadow align-items-center mx-md-5 bg-white mt-5 mt-md-0 justify-content-center rounded-4 text-center text-md-start slide-in-right">
+                    
+                    <!-- Solo su mobile -->
+                    <h3 class="display-5 px-5 px-md-0 mb-2 playfair-display fw-bold d-block d-md-none mt-4">
+                        Prenota la Tua Consulenza Gratuita
+                    </h3>
+                    <!-- Da tablet in su -->
+                    <h3 class="px-5 px-md-0 mb-2 playfair-display fw-bold d-none d-md-block mt-4">
+                        Prenota la Tua Consulenza Gratuita
+                    </h3>
+                    
+                    <p class="mb-4 fs-5 fs-responsive small">Un esperto ti contatterà entro 24 ore</p>
+                    
+                    <form id="myForm" class="w-100 px-5 px-md-0" style="max-width: 500px;">
+                        
+                        <div class="position-relative mb-3">
+                            <svg class="form-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-icon lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            <input type="text" class="form-control custom-focus py-2 ps-5" placeholder="Nome e Cognome *" required>
+                        </div>
+                        
+                        <div class="position-relative mb-3">
+                            <svg class="form-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+                            <input type="email" class="form-control custom-focus py-2 ps-5" placeholder="Email *" required>
+                        </div>
+                        
+                        <div class="position-relative mb-3">
+                            <svg class="form-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+                            <input type="tel" class="form-control custom-focus py-2 ps-5" placeholder="Telefono *" required>
+                        </div>
+                        
+                        <div class="position-relative mb-3">
+                            <svg class="form-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square-icon lucide-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                            <textarea class="form-control custom-focus py-2 ps-5 no-resize" rows="4" placeholder="Descrivi brevemente le tue esigenze immobiliari..."></textarea>
+                        </div>
+                        
+                        <button type="submit" id="submit-btn" class="btn btn-gradient pt-4 text-black btn-hover-grow w-100 d-flex justify-content-center align-items-center btn-disabled" disabled>
+                            <p class="fw-bold fs-4">
+                                <svg class="mx-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send-icon lucide-send"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg>
+                                Richiedi consulenza gratuita
+                            </p>
+                        </button>
+                        
+                        <p class="text-muted mt-2 py-2 small text-center">
+                            *Campi obbligatori. I tuoi dati sono protetti e non verranno condivisi con terzi.
+                        </p>
+                    </form>
+                </div>
+                
+            </div>            
+        </div>
+    </div>
+    
+    <!-- Sezione 6 - Footer -->
+    <div class="container-fluid bg-hero-4 py-5 text-gray-custom">
+        <!-- Titolo centrale -->
+        <div class="row justify-content-center mb-4">
+            <div class="col-auto">
+                <h2 class="text-center fw-bold text-gradient playfair-display">Omnia Patrimoni</h2>
+                <p>Servizi immobiliari di Eccellenza</p>
+            </div>
+        </div>
+        
+        <!-- Tre colonne affiancate -->
+        <div class="row text-center justify-content-center mb-4">
+            <div class="col-12 col-md-4 mb-3">
+                <h5 class="fw-semibold text-white">Contatti</h5>
+                <p>info@omniapatrimoni.it</p>
+                <p>+39 02 1234 5678</p>
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <h5 class="fw-semibold text-white">Servizi</h5>
+                <p>Valutazione Immobili</p>
+                <p>Vendita e investimenti</p>
+                <p>Ristrutturazioni</p>
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <h5 class="fw-semibold text-white">Orari</h5>
+                <p>Lun - Ven: 9:00 - 19:00</p>
+                <p>Sab: 9:00 - 13:00</p>
+            </div>
+        </div>
+        
+        <!-- Footer copyright -->
+        <div class="row">
+            <div class="col text-center small">
+                &copy; 2025 Omnia Patrimoni. Tutti i diritti riservati. | Privacy Policy | Cookie Policy
+            </div>
+        </div>
+    </div>
+    
+    
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <script src="script.js"></script>
+</body>
+</html>
