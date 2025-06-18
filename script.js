@@ -144,7 +144,31 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-//Bottone Form Disabilitato - Sezione 1
+//Animazione card e form - Sezione 5
+ document.addEventListener("DOMContentLoaded", function () {
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          el.classList.remove("invisible");
+
+          if (el.classList.contains("animate-from-left")) {
+            el.classList.add("slide-in-left");
+          } else if (el.classList.contains("animate-from-right")) {
+            el.classList.add("slide-in-right");
+          }
+
+          observer.unobserve(el);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll(".invisible").forEach(el => {
+      observer.observe(el);
+    });
+  });
+
+//Bottone Form Disabilitato - Sezione 5
 document.addEventListener("DOMContentLoaded", function () {
   const secondForm = document.querySelectorAll("form")[1];
   

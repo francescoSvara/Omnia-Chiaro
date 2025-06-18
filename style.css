@@ -263,6 +263,10 @@ textarea.form-control {
   animation: slideInRight 2s ease forwards;
 }
 
+.hidden-on-load {
+  opacity: 0;
+}
+
 /*--------------------------------------------------------------
 # TABLET (min-width: 768px)
 --------------------------------------------------------------*/
