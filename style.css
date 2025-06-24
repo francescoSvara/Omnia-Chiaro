@@ -10,6 +10,11 @@ body {
   background-color: #F5F1EA;
 }
 
+.logo {
+  height: 150px;
+  width: 286px;
+}
+
 /*--------------------------------------------------------------
 # Titoli e testo principale (MOBILE)
 --------------------------------------------------------------*/
@@ -35,14 +40,14 @@ body {
 # Gradiente su testo e bottoni
 --------------------------------------------------------------*/
 .text-gradient {
-  background: linear-gradient(to left, #866413 25%, #E3D88C 100%);
+  background: linear-gradient(to left, #9a6c1a 25%, #E9C044 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .btn-gradient {
-  background: linear-gradient(to left, #866413 25%, #E3D88C 100%);
+  background: linear-gradient(to left, #9a6c1a 25%, #E9C044 100%);
   color: white;
   border: none;
 }
@@ -180,7 +185,7 @@ textarea.form-control {
 
 .custom-card-hover:hover h5 {
   transition: color 0.3s ease;
-  background: linear-gradient(to left, #866413 25%, #E3D88C 100%);
+  background: linear-gradient(to left, #9a6c1a 25%, #E9C044 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -293,6 +298,10 @@ textarea.form-control {
 # DESKTOP (min-width: 992px)
 --------------------------------------------------------------*/
 @media (min-width: 992px) {
+  .vh-100-desktop {
+    height: 100vh;
+  }
+
   .hero-title-big {
     font-size: 4.5rem;
   }

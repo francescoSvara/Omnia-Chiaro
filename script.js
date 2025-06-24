@@ -28,32 +28,36 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 //Bottone Form Disabilitato - Sezione 1
-const form = document.getElementById('myForm');
-const submitBtn = document.getElementById('submit-btn');
-const inputs = form.querySelectorAll('input[required]');
+document.addEventListener("DOMContentLoaded", function () {
+  function setupFormValidation(formId) {
+    const form = document.getElementById(formId);
+    if (!form) return;
 
-function checkInputs() {
-  let allFilled = true;
-  inputs.forEach(input => {
-    if (!input.value.trim() || !input.checkValidity()) {
-      allFilled = false;
+    const inputs = form.querySelectorAll('input[required]');
+    const submitBtn = form.querySelector("button[type='submit']");
+
+    function validateForm() {
+      // Controlla solo che i campi non siano vuoti (non validazione email qui)
+      let allFilled = true;
+      inputs.forEach(input => {
+        if (!input.value.trim()) allFilled = false;
+      });
+
+      submitBtn.disabled = !allFilled;
+      submitBtn.classList.toggle("btn-disabled", !allFilled);
     }
-  });
-  
-  if (allFilled) {
-    submitBtn.disabled = false;
-    submitBtn.classList.remove('btn-disabled');
-  } else {
-    submitBtn.disabled = true;
-    submitBtn.classList.add('btn-disabled');
-  }
-}
 
-inputs.forEach(input => {
-  input.addEventListener('input', checkInputs);
+    inputs.forEach(input => {
+      input.addEventListener("input", validateForm);
+    });
+
+    validateForm();
+  }
+
+  setupFormValidation('myForm1');  // Cambia con id del tuo primo form
+  setupFormValidation('myForm2');  // Cambia con id del tuo secondo form
 });
 
-checkInputs();
 
 //Animazione Entrata dal Basso - Sezione 2
 document.addEventListener('DOMContentLoaded', () => {
@@ -167,29 +171,3 @@ document.addEventListener('DOMContentLoaded', () => {
       observer.observe(el);
     });
   });
-
-//Bottone Form Disabilitato - Sezione 5
-document.addEventListener("DOMContentLoaded", function () {
-  const secondForm = document.querySelectorAll("form")[1];
-  
-  if (!secondForm) return;
-  
-  const inputs = secondForm.querySelectorAll("input[required], textarea[required]");
-  const submitBtn = secondForm.querySelector("button[type='submit']");
-  
-  function validateForm() {
-    let isValid = true;
-    inputs.forEach(input => {
-      if (!input.value.trim()) isValid = false;
-    });
-    
-    submitBtn.disabled = !isValid;
-    submitBtn.classList.toggle("btn-disabled", !isValid);
-  }
-  
-  inputs.forEach(input => {
-    input.addEventListener("input", validateForm);
-  });
-  
-  validateForm();
-});

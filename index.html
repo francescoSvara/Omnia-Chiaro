@@ -17,7 +17,8 @@
 <body>
     
     <!-- Sezione 1 -->
-    <div class="container-fluid py-3 bg-hero d-flex align-items-center">
+    
+    <div class="container-fluid py-3 bg-hero d-flex align-items-center vh-100-desktop">
         <div class="container py-3">
             <div class="row flex-column flex-md-row">
                 
@@ -47,7 +48,7 @@
                             </svg>
                         </button>
                         
-                        <button type="button" class="btn border-3 py-2 px-md-4 fw-bold btn-outline-dark-hover">
+                        <button type="button" class="btn border-3 py-2 px-md-4 fw-bold btn-outline-dark-hover" onclick="document.getElementById('section3').scrollIntoView({behavior: 'smooth'});">
                             Scopri i Servizi
                         </button>
                     </div>
@@ -80,6 +81,8 @@
                 <!-- Colonna: Form contatti -->
                 <div class="col-12 col-md-6 d-flex flex-column shadow align-items-center mt-5 mt-md-0 justify-content-center text-center text-md-start">
                     
+                    <img src="media/logo.png" alt="Descrizione immagine" class="img-fluid logo my-2">
+                    
                     <!-- Solo su mobile -->
                     <h3 class="display-5 px-5 px-md-0 mb-2 playfair-display fw-bold d-block d-md-none">
                         Richiedi la Tua Consulenza Gratuita
@@ -91,7 +94,7 @@
                     
                     <p class="mb-4 fs-5 fs-responsive small">Un esperto ti contatterà entro 24 ore</p>
                     
-                    <form id="myForm" class="w-100 px-5 px-md-0" style="max-width: 500px;">
+                    <form id="myForm1" class="w-100 px-5 px-md-0" style="max-width: 500px;">
                         
                         <div class="position-relative mb-3">
                             <svg class="form-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-icon lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
@@ -216,7 +219,7 @@
     
     
     <!-- Sezione 3 - Cosa Possiamo Fare per Te-->
-    <div class="container py-5 bg-hero-3">
+    <div id="section3" class="container py-5 bg-hero-3">
         <div class="row justify-content-center fade-in">
             
             <!-- Titolo Sezione -->
@@ -499,7 +502,7 @@
                     
                     <p class="mb-4 fs-5 fs-responsive small">Un esperto ti contatterà entro 24 ore</p>
                     
-                    <form id="myForm" class="w-100 px-5 px-md-0" style="max-width: 500px;">
+                    <form id="myForm2" class="w-100 px-5 px-md-0" style="max-width: 500px;">
                         
                         <div class="position-relative mb-3">
                             <svg class="form-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-icon lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
@@ -540,28 +543,27 @@
     
     <!-- Sezione 6 - Footer -->
     <div class="container-fluid bg-hero-4 py-5 text-gray-custom">
-        <!-- Titolo centrale -->
-        <div class="row justify-content-center mb-4">
-            <div class="col-auto">
-                <h2 class="text-center fw-bold text-gradient playfair-display">Omnia Patrimoni</h2>
+        <!-- Logo -->
+        <div class="row text-center mb-4">
+            <div class="col-12 col-md-3">
+                <img src="media/logo.png" alt="Descrizione immagine" class="img-fluid logo my-2">
                 <p>Servizi immobiliari di Eccellenza</p>
             </div>
-        </div>
-        
-        <!-- Tre colonne affiancate -->
-        <div class="row text-center justify-content-center mb-4">
-            <div class="col-12 col-md-4 mb-3">
+            
+            <div class="col-12 col-md-3 mt-5">
                 <h5 class="fw-semibold text-white">Contatti</h5>
                 <p>info@omniapatrimoni.it</p>
                 <p>+39 02 1234 5678</p>
             </div>
-            <div class="col-12 col-md-4 mb-3">
+            
+            <div class="col-12 col-md-3 mt-5">
                 <h5 class="fw-semibold text-white">Servizi</h5>
                 <p>Valutazione Immobili</p>
                 <p>Vendita e investimenti</p>
                 <p>Ristrutturazioni</p>
             </div>
-            <div class="col-12 col-md-4 mb-3">
+            
+            <div class="col-12 col-md-3 mt-5">
                 <h5 class="fw-semibold text-white">Orari</h5>
                 <p>Lun - Ven: 9:00 - 19:00</p>
                 <p>Sab: 9:00 - 13:00</p>
@@ -569,7 +571,7 @@
         </div>
         
         <!-- Footer copyright -->
-        <div class="row">
+        <div class="row pt-4">
             <div class="col text-center small">
                 &copy; 2025 Omnia Patrimoni. Tutti i diritti riservati. | Privacy Policy | Cookie Policy
             </div>
