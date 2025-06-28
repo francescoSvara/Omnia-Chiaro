@@ -54,8 +54,9 @@ document.addEventListener("DOMContentLoaded", function () {
     validateForm();
   }
 
-  setupFormValidation('myForm1');  // Cambia con id del tuo primo form
-  setupFormValidation('myForm2');  // Cambia con id del tuo secondo form
+  setupFormValidation('myForm1');
+  setupFormValidation('myForm2');
+  setupFormValidation('myForm3');
 });
 
 
